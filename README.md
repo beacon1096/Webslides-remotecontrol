@@ -1,7 +1,7 @@
 # Webslides-remotecontrol
 A websocket based solution for remote presentation
 
-Due to the coronavirus issues we had to take our lessons at home. Solutions like QQ Group Screen Sharing provides poor image quality especially when playing a video, and it cannot record the sound of the video, so either the video will have no sound or the sound has to be recorded through a microphone, leading to poor audio quality.
+Due to the coronavirus outbreak we had to take our lessons at home. Solutions like QQ Group Screen Sharing provides poor image quality especially when playing a video, and it cannot record the sound of the video, so either the video will have no sound or the sound has to be recorded through a microphone, leading to poor audio quality.
  
 So we chose Nodeppt as our presentation tool, but it's remote controll function was removed and can only operator on a single machine, resulting in a rough experience when sharing the presentation with up to 50 people. 
 
