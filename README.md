@@ -3,7 +3,7 @@ A websocket based solution for remote presentation
 
 Due to the coronavirus issues we had to take our lessons at home. Solutions like QQ Group Screen Sharing provides poor image quality especially when playing a video, and it cannot record the sound of the video, so either the video will have no sound or the sound has to be recorded through a microphone, leading to poor audio quality.
  
-So we chose Nodeppt as our presentation tool, but it's remote controll function was removed and can only operator on a single machine, leading to a rough experience when sharing the presentation with up to 50 people.
+So we chose Nodeppt as our presentation tool, but it's remote controll function was removed and can only operator on a single machine, resulting in a rough experience when sharing the presentation with up to 50 people. 
 
 So I made this. 
 
@@ -11,7 +11,11 @@ So I made this.
 
 "server.js" relies on "ws" to work.
 ``` bash
-    npm install ws //or "yarn add ws"
+npm install ws
+```
+or
+```bash
+yarn add ws
 ```
 
 "remote.js" relies on "websocket-heartbeat-js" for auto reconnect.
@@ -23,12 +27,11 @@ First You'll need a server to run "server.js", which simply broadcast the progre
 You should embed "remote.js" as a plugin to your Webslides instance like this, according to the documentation of Webslides:
 
 ``` javascript
-    WebSlides.registerPlugin("Remote",Remote);
-    //...before initializing Webslides instance
-    const ws = new WebSlides({
-        loop: false,
-        showIndex: !isViewer
-    })
+WebSlides.registerPlugin("Remote",Remote);
+//...before initializing Webslides instance
+const ws = new WebSlides({
+    loop: false
+})
 ```
 
 Look at your index.html to get some ideas. And you should change the Websocket server address in "remote.js" to match your server's.
