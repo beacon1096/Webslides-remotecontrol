@@ -39,7 +39,7 @@ You should also embed "websocket-heartbeat-js" to your webpage for the plugin to
 
 ## Usage
 
-Now the presenter should visit the webslide page with a parameter "?mode=speaker", which allows the plugin to broadcast your current slide index when event "ws:slide-change" is triggered.
+Now the presenter should visit the webslide page with a parameter "?mode=speaker", which allows the plugin to broadcast your current slide index when event "ws:slide-change" is triggered. If more than one speaker is participated, as one speaker navigate through the slides, other speakers will sync the progress of that speaker, which would be useful in the situation when a group of people are giving presentation, and want to give their parts of the presentation completly on their own without a "chairman" navigating through the slides for them.
 
 Viewers should visit without parameters, and the plugin will listen to the broadcast and navigate to the slide where the speaker is. The plugin will not block visitor from navigating back and forth in the presentation, though.
 
