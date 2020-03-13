@@ -43,7 +43,7 @@ Now the presenter should visit the webslide page with a parameter "?mode=speaker
 
 Viewers should visit without parameters, and the plugin will listen to the broadcast and navigate to the slide where the speaker is. The plugin will not block visitor from navigating back and forth in the presentation, though.
 
-In case you need to check the document while someone else is using it in Speaker Mode, visit the webslide page with a parameter "?mode=speaker", which prevents the plugin from connecting to the Websocket server, disabling remote controll.
+In case you need to check the document while someone else is using it in Speaker Mode, visit the webslide page with a parameter "?mode=nocontrol", which prevents the plugin from connecting to the Websocket server, disabling remote controll.
 
 ## Code quality
 
